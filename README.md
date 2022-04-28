@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on [js-engine](https://github.com/brunojunqueira/js-engine.git)
 
-- 🌱 I’m currently learning **GraphQL, Laravel **
+- 🌱 I’m currently learning ** GraphQL and Laravel **
 
 - 📫 How to reach me **brunosdsj@gmail.com**
 
