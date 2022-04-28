@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Bruno</h1>
-<h3 align="center">A passionate frontend / backend developer from Brazil</h3>
+<h3 align="center">A passionate FullStack developer from Brazil</h3>
 
 - 🔭 I’m currently working on [js-engine](https://github.com/brunojunqueira/js-engine.git)
 
