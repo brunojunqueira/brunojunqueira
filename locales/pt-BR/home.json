@@ -1,12 +1,14 @@
 {
     "resumeLink": "Bruno_Junqueira_CURRICULO.pdf",
-    "english": "Inglês (US)",
-    "portuguese": "Português (Brasil)",
-    "about": "Sobre",
+    "en-US": "English (US)",
+    "pt-BR": "Português (Brasil)",
+    "about": "Sobre Mim",
     "projects": "Projetos",
     "skills": "Habilidades",
     "resume": "Currículo",
 
     "welcome":"Olá, meu nome é Bruno Junqueira e eu sou um",
-    "aboutText":"Eu sou um Desenvolvedor Full-stack, apaixonado por TI com 3+ anos de experiência em Web Development, criando e otimizando aplicações usando React JS, TypeScript e Node. Adquiri muita experiência com trabalho árduo em projetos de auto-aperfeiçoamento, estudo dos conceitos e boas práticas de programação."
+    "aboutText":"Eu sou um Desenvolvedor Full-stack, apaixonado por TI com 3+ anos de experiência em Web Development, criando e otimizando aplicações usando React JS, TypeScript e Node. Adquiri muita experiência com trabalho árduo em projetos de auto-aperfeiçoamento, estudo dos conceitos e boas práticas de programação.",
+
+    "SocialNetwork": "Rede Social"
 }

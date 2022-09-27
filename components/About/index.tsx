@@ -9,12 +9,10 @@ export default function About() {
         <Flex
             as={"section"}
             id="about"
-            h='100vh'
-            px="20rem"
-            mt="2rem"
+            px="12rem"
             pt='6rem'
             direction='column'
-            gap="1rem"
+            gap="2rem"
         >
             <Text
                 borderBottom='2px solid'

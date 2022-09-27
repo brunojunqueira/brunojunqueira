@@ -24,7 +24,7 @@ export default function Landing() {
                 direction='column'
                 align='center'
                 justify='center'
-                fontSize={150}
+                fontSize={175}
                 fontWeight="black"
             >
                 <Text
@@ -42,6 +42,7 @@ export default function Landing() {
                 </Text>
                 <Text
                     as={"span"}
+                    mb="2rem"
                 >
                     DEVELOPER
                 </Text>
@@ -52,15 +53,6 @@ export default function Landing() {
                 h="15rem"
                 borderRadius='50%'
             />
-            <Button
-                zIndex={1}
-                mt='2rem'
-                bg="coverShadowColor"
-                color="coverTextColor"
-                _hover={{bg:"#1F3654", color:"#FFF"}}
-            >
-                {t('resume')}
-            </Button>
         </Flex>
     )
 }

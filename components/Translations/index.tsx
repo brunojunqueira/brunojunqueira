@@ -1,31 +1,44 @@
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation'
 
-import { Flex, Text } from '@chakra-ui/react';
+import { Button, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react';
 import Link from 'next/dist/client/link';
 import {IoGlobe} from "react-icons/io5"
 
 export function Translations() {
-    
+
     const router = useRouter();
+
     const {t} = useTranslation('home');
 
     return (
-        <Flex
-            align='center'
-            gap={2}
-            mr={5}
-        >
-            <IoGlobe/>
-            {router.locales?.map(locale => (
-                <Text key={locale}>
-                    <Link href={router.asPath} locale={locale}>
-                        <a>
-                            {(locale === 'en-US') ? t('english') : t('portuguese')}
-                        </a>
+        <Menu>
+            <MenuButton
+                as={Button}
+                mx={2}
+                w="fit-content" 
+                bg="prussianBlue"
+                color="white"
+                borderRadius={5}
+
+                rightIcon={<IoGlobe/>}
+            >
+                { t(router.locale ?? "") }
+            </MenuButton>
+            <MenuList>
+                {router.locales?.map(locale => (
+                    <Link 
+                        key={locale}
+                        href={router.asPath} 
+                        locale={locale}
+                    >
+                        <MenuItem>
+                            {t(locale)}
+                        </MenuItem>
                     </Link>
-                </Text>
-            ))}
-        </Flex>
+                ))}
+            </MenuList>
+            
+        </Menu>
     );
 }

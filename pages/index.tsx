@@ -1,10 +1,9 @@
 import type { NextPage } from 'next';
 
-import { Flex } from '@chakra-ui/react';
-
 import Head from 'next/head';
 import Landing from 'components/Landing';
 import About from 'components/About';
+import Projects from 'components/Projects';
 
 
 const Home: NextPage = () => {
@@ -19,6 +18,7 @@ const Home: NextPage = () => {
       <main>
         <Landing/>
         <About/>
+        <Projects/>
       </main>
       <footer>
 

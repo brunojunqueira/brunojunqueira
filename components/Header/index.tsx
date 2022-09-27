@@ -7,7 +7,6 @@ import { Divider, Flex, Text } from "@chakra-ui/react";
 import ThemeToggler from "components/ThemeToggler";
 import Logo from "components/Logo";
 import { Translations } from 'components/Translations';
-import Link from 'next/link';
 
 interface HeaderProps {
 
@@ -15,38 +14,26 @@ interface HeaderProps {
 
 interface TabProps{
     title: string
-    href: string
+    selected: boolean
     action: () => void
-    newTab?: boolean
-    selected?: boolean
-    
 }
 
 const Tabs = [ 'about', 'projects', 'skills' ]
 
-const Tab = ({ title, href, action, selected = false, newTab = false} : TabProps) => {
+const Tab = ({ title, selected, action } : TabProps) => {
 
     return(
-        <Link
+        <Text
             onClick={ () => action() }
-            href={href}
-            scroll
+            fontSize={18}
+            fontWeight="semibold"
+            borderColor="prussianBlue"
+            borderBottom={selected ?  "solid 3px" : ""}
+            cursor="pointer"
+            _hover={ selected ? {} : { borderBottom: "solid 2px gray" } }
         >
-            <Text
-                as={"a"}
-                target={ newTab ? '_blank' : '' }
-                
-                fontSize={18}
-                fontWeight="semibold"
-                borderColor="prussianBlue"
-                borderBottom={selected ?  "solid 3px" : ""}
-                cursor="pointer"
-                _hover={ selected ? {} : { borderBottom: "solid 2px gray" } }
-            >
-                {title.toUpperCase()}
-            </Text>
-        </Link>
-        
+            {title.toUpperCase()}
+        </Text>
     )
 }
 
@@ -86,17 +73,15 @@ export default function Header( { } : HeaderProps ) {
                                 <Tab
                                     key={key}
                                     title={t(tab)}
-                                    href={"#"+tab}
                                     selected={selected===tab}
-                                    action={()=>setSelected(tab)}
+                                    action={()=>{setSelected(tab); router.push('/#' + tab)}}
                                 />
                             )
                         })}
                         <Tab
-                            newTab
                             title={t("resume")}
-                            href={'/'+t('resumeLink')}
-                            action={()=>{}}
+                            action={()=>{router.push('/' + t('resumeLink'))}}
+                            selected={selected==="resume"}
                         />
                     </Flex>
                     <Translations/>
