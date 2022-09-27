@@ -1,9 +1,7 @@
 <h1 align="center">Hi 👋, I'm Bruno</h1>
 <h3 align="center">A passionate FullStack developer from Brazil</h3>
 
-- 🔭 I’m currently working on [js-engine](https://github.com/brunojunqueira/js-engine.git)
-
-- 🌱 I’m currently learning **GraphQL and Laravel**
+- 🔭 I’m currently working on [fireplace](https://github.com/brunojunqueira/fireplace.git)
 
 - 📫 How to reach me **brunosdsj@gmail.com**
 
