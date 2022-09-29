@@ -17,6 +17,7 @@ export default function Landing() {
         >
             <Text
                 fontSize={20}
+                mb="-2rem"
             >
                 👋 {t('welcome')}
             </Text>
@@ -29,7 +30,7 @@ export default function Landing() {
             >
                 <Text
                     as={"span"}
-                    mb="-6rem"
+                    mb="-8rem"
                     color="coverTextColor"
                     textShadow={`
                         -2px -2px 0 var(--chakra-colors-coverShadowColor), 
@@ -42,7 +43,6 @@ export default function Landing() {
                 </Text>
                 <Text
                     as={"span"}
-                    mb="2rem"
                 >
                     DEVELOPER
                 </Text>

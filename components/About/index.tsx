@@ -18,8 +18,8 @@ export default function About() {
                 borderBottom='2px solid'
                 borderColor="prussianBlue"
                 w='fit-content'
-                fontSize={24}
-                fontWeight="bold"
+                fontSize={30}
+                fontWeight="black"
             >
                 {t('about')}
             </Text>

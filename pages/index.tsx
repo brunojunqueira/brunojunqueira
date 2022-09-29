@@ -4,6 +4,8 @@ import Head from 'next/head';
 import Landing from 'components/Landing';
 import About from 'components/About';
 import Projects from 'components/Projects';
+import Skills from 'components/Skills';
+import Footer from 'components/Footer';
 
 
 const Home: NextPage = () => {
@@ -11,7 +13,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>Bruno Junqueira</title>
-        <meta name="description" content="Bruno Junqueira Portifolio" />
+        <meta name="description" content="Bruno Junqueira Portfolio" />
         <link rel="icon" href="/logo.ico" />
       </Head>
 
@@ -19,10 +21,10 @@ const Home: NextPage = () => {
         <Landing/>
         <About/>
         <Projects/>
+        <Skills/>
       </main>
-      <footer>
 
-      </footer>
+      <Footer/>
     </div>
   )
 }

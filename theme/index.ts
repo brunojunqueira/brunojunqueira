@@ -16,6 +16,18 @@ export const main = extendTheme({
                 default: "#1A202C",
                 _dark: "white"
             },
+            invertedOutline:{
+                default:"rgba(0, 0, 0, 0.3)",
+                _dark: "rgba(255, 255, 255, 0.3)"
+            },
+            footerBg:{
+                default: "#FFFAFA",
+                _dark: "#242C3C"
+            },
+            footerTextColor:{
+                default:"rgba(0, 0, 0, 0.6)",
+                _dark: "rgba(255, 255, 255, 0.6)"
+            }
         },
     },
 })

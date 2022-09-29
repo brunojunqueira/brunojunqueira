@@ -80,8 +80,8 @@ export default function Header( { } : HeaderProps ) {
                         })}
                         <Tab
                             title={t("resume")}
-                            action={()=>{router.push('/' + t('resumeLink'))}}
-                            selected={selected==="resume"}
+                            action={( ) => window.open('/' + t('resumeLink'), '_blank') }
+                            selected={ selected==="resume" }
                         />
                     </Flex>
                     <Translations/>
