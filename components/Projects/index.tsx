@@ -55,7 +55,7 @@ const Project = ({ background, name, type, tecs, link } : ProjectProps) => {
                     fontSize={12}
                 >
                     {tecs.map((tec, index)=>{
-                        if(index < 3){
+                        if(index < 3 && index > 0){
                             return ", " + tec;
                         } else if(index === 0){
                             return tec;

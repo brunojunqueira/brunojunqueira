@@ -28,13 +28,6 @@ const projects : ProjectProps [] = [
         background: "hackathon.jpeg",
         tecs: ["Python", "Typescript", "React.js", "Chakra-UI"],
         link: "https://github.com/brunojunqueira/hackathon2022"
-    },
-    {
-        name: "Portfolio",
-        type: "Website",
-        background: "portfolio.jpeg",
-        tecs: ["Next.js", "Chakra-UI", "Typescript"],
-        link: "https://brunojunqueira.vercel.app/pt-BR"
     }
 ]
 
