@@ -1,4 +1,6 @@
-const social = [
+import { SocialLinkProps } from "components/Footer";
+
+const social : SocialLinkProps [] = [
     {
         label: "in/brunosdsj",
         link: "https://www.linkedin.com/in/brunosdsj/",

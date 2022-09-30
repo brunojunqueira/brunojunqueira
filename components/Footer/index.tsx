@@ -4,7 +4,7 @@ import useTranslation from "next-translate/useTranslation";
 
 import social from "data/social"
 
-interface SocialLinkProps {
+export interface SocialLinkProps {
     label: string
     link: string
     icon: string

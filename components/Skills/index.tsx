@@ -10,7 +10,7 @@ interface SkillProps {
     icon: string
 }
 
-interface ThemeProps{
+export interface ThemeProps{
     title: string
     skills: SkillProps []
 }

@@ -3,7 +3,7 @@ import { Flex, Text } from "@chakra-ui/react";
 import projects from "data/projects";
 import useTranslation from "next-translate/useTranslation";
 
-interface ProjectProps {
+export interface ProjectProps {
     background: string
     name: string
     type: string

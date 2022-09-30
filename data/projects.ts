@@ -1,4 +1,6 @@
-const projects = [
+import { ProjectProps } from "components/Projects";
+
+const projects : ProjectProps [] = [
     {
         name: "Interesting",
         type: "Website",

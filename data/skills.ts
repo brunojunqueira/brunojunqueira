@@ -1,4 +1,6 @@
-const themes = [
+import { ThemeProps } from "components/Skills";
+
+const themes : ThemeProps [] = [
     {
         title: "Prototyping",
         skills: [
@@ -43,7 +45,6 @@ const themes = [
                 name: "NodeJS",
                 icon: "logos:nodejs-icon"
             },
-            ,
             {
                 name: "AdonisJS",
                 icon: "logos:adonisjs-icon"
@@ -64,7 +65,6 @@ const themes = [
                 name: "Jest",
                 icon: "vscode-icons:file-type-jest"
             },
-            ,
             {
                 name: "Supabase",
                 icon: "logos:supabase-icon"
@@ -73,7 +73,6 @@ const themes = [
                 name: "React Router",
                 icon: "logos:react-router"
             },
-            ,
             {
                 name: "Axios",
                 icon: "logos:axios"
