@@ -1,9 +1,12 @@
 import { Button, Flex, Image, Text } from "@chakra-ui/react";
+import useBreakpoint from "contexts/useBreakpoint";
 import useTranslation from "next-translate/useTranslation";
 
 export default function Landing() {
 
     const { t } = useTranslation('home'); 
+
+    const sizes = useBreakpoint();
 
     return (
         <Flex
@@ -12,12 +15,11 @@ export default function Landing() {
             align='center'
             justify='center'
             direction='column'
-            px={5}
             py={10}
         >
             <Text
-                fontSize={20}
-                mb="-2rem"
+                fontSize={sizes.fontSize}
+                mb={sizes.isMobile ? "2rem" : "-2rem"}
             >
                 👋 {t('welcome')}
             </Text>
@@ -25,12 +27,12 @@ export default function Landing() {
                 direction='column'
                 align='center'
                 justify='center'
-                fontSize={175}
+                fontSize={sizes.titleSize}
                 fontWeight="black"
             >
                 <Text
                     as={"span"}
-                    mb="-8rem"
+                    mb={`-${sizes.titleSpace}rem`}
                     color="coverTextColor"
                     textShadow={`
                         -2px -2px 0 var(--chakra-colors-coverShadowColor), 

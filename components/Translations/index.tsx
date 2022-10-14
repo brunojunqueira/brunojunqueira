@@ -4,8 +4,11 @@ import useTranslation from 'next-translate/useTranslation'
 import { Button, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react';
 import Link from 'next/dist/client/link';
 import {IoGlobe} from "react-icons/io5"
+import useBreakpoint from 'contexts/useBreakpoint';
 
 export function Translations() {
+
+    const sizes = useBreakpoint();
 
     const router = useRouter();
 
@@ -20,10 +23,9 @@ export function Translations() {
                 bg="prussianBlue"
                 color="white"
                 borderRadius={5}
-
-                rightIcon={<IoGlobe/>}
+                rightIcon={ !sizes.isMobile && <IoGlobe/>}
             >
-                { t(router.locale ?? "") }
+                { !sizes.isMobile ? t(router.locale ?? "") : <IoGlobe/> }
             </MenuButton>
             <MenuList>
                 {router.locales?.map(locale => (

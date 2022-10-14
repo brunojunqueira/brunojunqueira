@@ -1,15 +1,18 @@
 import { Flex, Text } from "@chakra-ui/react";
+import useBreakpoint from "contexts/useBreakpoint";
 import useTranslation from "next-translate/useTranslation";
 
 export default function About() {
 
     const { t } = useTranslation('home');
 
+    const sizes = useBreakpoint();
+
     return (
         <Flex
             as={"section"}
             id="about"
-            px="12rem"
+            px={ sizes.padding }
             pt='6rem'
             direction='column'
             gap="2rem"
@@ -24,7 +27,8 @@ export default function About() {
                 {t('about')}
             </Text>
             <Text
-                w="50rem"
+                w="100%"
+                wordBreak="break-word"
             >
                 {t('aboutText')}
             </Text>

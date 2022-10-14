@@ -1,4 +1,5 @@
 import { Flex, Text } from "@chakra-ui/react";
+import useBreakpoint from "contexts/useBreakpoint";
 
 import projects from "data/projects";
 import useTranslation from "next-translate/useTranslation";
@@ -72,11 +73,13 @@ export default function Projects() {
 
     const { t } = useTranslation('home');
 
+    const sizes = useBreakpoint();
+
     return (
         <Flex
             as={"section"}
             id="projects"
-            px="12rem"
+            px={sizes.padding}
             pt='6rem'
             direction='column'
             gap="2rem"

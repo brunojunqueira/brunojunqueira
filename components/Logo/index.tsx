@@ -2,6 +2,7 @@ import { MouseEventHandler } from 'react'
 
 import { Flex, keyframes, Text } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import useBreakpoint from 'contexts/useBreakpoint';
 
 const animationKeyFrames = keyframes`
     0%{
@@ -28,6 +29,8 @@ export default function Logo({onClick} : LogoProps,){
 
     const router = useRouter();
 
+    const sizes = useBreakpoint();
+
     return(
         <>
             <Text
@@ -49,8 +52,8 @@ export default function Logo({onClick} : LogoProps,){
                 >
                     _
                 </Text>
-                Bruno Junqueira
-            </Text>
+                {!sizes.isMobile && "Bruno Junqueira"}
+                </Text>
         </>
     )
 }

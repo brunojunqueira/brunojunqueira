@@ -4,6 +4,7 @@ import useTranslation from "next-translate/useTranslation";
 import { Icon } from '@iconify/react';
 
 import themes from "data/skills"
+import useBreakpoint from "contexts/useBreakpoint";
 
 interface SkillProps {
     name: string
@@ -54,12 +55,14 @@ const Theme = ({ title, skills } : ThemeProps) => {
 export default function Skills() {
 
     const { t } = useTranslation('home');
+
+    const sizes = useBreakpoint();
     
     return (
         <Flex
                 as={"section"}
                 id="skills"
-                px="12rem"
+                px={sizes.padding}
                 py='6rem'
                 direction='column'
                 gap="2rem"
