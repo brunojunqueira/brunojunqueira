@@ -8,7 +8,6 @@ import { Divider, Flex, Text } from "@chakra-ui/react";
 import ThemeToggler from "components/ThemeToggler";
 import Logo from "components/Logo";
 import { Translations } from 'components/Translations';
-import MobileMenu from './MobileMenu';
 
 interface HeaderProps {
 
