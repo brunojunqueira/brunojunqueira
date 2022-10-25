@@ -12,7 +12,7 @@ const projects : ProjectProps [] = [
         name: "Tasker Man(ager)",
         type: "Node Module",
         background: "taskerman.jpeg",
-        tecs: ["Typescript"],
+        tecs: ["Typescript", "Node.js"],
         link: "https://www.npmjs.com/package/tasker-man"
     },
     {
@@ -28,6 +28,20 @@ const projects : ProjectProps [] = [
         background: "hackathon.jpeg",
         tecs: ["Python", "Typescript", "React.js", "Chakra-UI"],
         link: "https://github.com/brunojunqueira/hackathon2022"
+    },
+    {
+        name: "Fireplace",
+        type: "Website",
+        background: "fireplace.jpeg",
+        tecs: ["Next.js", "Sass", "Adonis.js", "Javascript", "MySQL"],
+        link: "https://github.com/brunojunqueira/fireplace"
+    },
+    {
+        name: "Viniebrun Shop",
+        type: "Website",
+        background: "viniebrun.jpeg",
+        tecs: ["React.js", "React Redux", "Typescript", "Chakra-UI"],
+        link: "https://github.com/brunojunqueira/viniebrun-shop"
     }
 ]
 
