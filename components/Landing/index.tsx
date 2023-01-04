@@ -16,6 +16,7 @@ export default function Landing() {
             justify='center'
             direction='column'
             py={10}
+            bg="linear-gradient(#1f3654, #fff)"
         >
             <Text
                 fontSize={sizes.fontSize}
