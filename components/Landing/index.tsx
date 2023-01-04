@@ -30,12 +30,6 @@ export default function Landing() {
                 fontSize={sizes.titleSize}
                 fontWeight="black"
             >
-                <Image 
-                    src="avatar.png" 
-                    alt="avatar"
-                    h="15rem"
-                    borderRadius='50%'
-                />
                 <Text
                     as={"span"}
                     mb={`-${sizes.titleSpace}rem`}
@@ -54,6 +48,12 @@ export default function Landing() {
                 >
                     DEVELOPER
                 </Text>
+                <Image 
+                    src="avatar.png" 
+                    alt="avatar"
+                    h="15rem"
+                    borderRadius='50%'
+                />
             </Flex>
         </Flex>
     )
