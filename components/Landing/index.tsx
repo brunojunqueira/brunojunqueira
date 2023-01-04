@@ -50,7 +50,7 @@ export default function Landing() {
                 </Text>
             </Flex>
             <Image 
-                src="avatar.jpg" 
+                src="avatar.png" 
                 alt="avatar"
                 h="15rem"
                 borderRadius='50%'
