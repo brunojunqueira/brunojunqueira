@@ -1,8 +1,6 @@
 <h1 align="center">Hi 👋, I'm Bruno</h1>
 <h3 align="center">A passionate FullStack developer from Brazil</h3>
 
-- 🔭 I’m currently working on [fireplace](https://github.com/brunojunqueira/fireplace.git)
-
 - 📫 How to reach me **brunosdsj@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
