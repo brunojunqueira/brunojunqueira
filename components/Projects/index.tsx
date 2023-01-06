@@ -40,8 +40,8 @@ const Project = ({ background, name, type, tecs, link } : ProjectProps) => {
                 justify="center"
                 direction="column"
                 boxShadow="rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px"
-                display="none"
-                _hover={{display: "flex"}}
+                visibility="hidden"
+                _hover={{visibility: ""}}
             >
                 <Text
                     fontWeight="black"
