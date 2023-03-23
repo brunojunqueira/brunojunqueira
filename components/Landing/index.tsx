@@ -42,7 +42,7 @@ export default function Landing() {
         </Text>
         <Text as={"span"}>DEVELOPER</Text>
         <Image
-          src="avatar.jpg"
+          src="avatar.webp"
           alt="avatar"
           style={
             isMobile
