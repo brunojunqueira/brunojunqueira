@@ -1,5 +1,5 @@
 import { Flex, Text } from "@chakra-ui/react";
-import useBreakpoint from "contexts/useBreakpoint";
+import useBreakpoint from "hooks/useBreakpoint";
 
 import projects from "data/projects";
 import useTranslation from "next-translate/useTranslation";
@@ -35,7 +35,8 @@ const Project = ({ background, name, type, tecs, link }: ProjectProps) => {
       overflow="hidden"
       outline="1px solid"
       outlineColor="invertedOutline"
-      onClick={() => window.open(link, "_blank")}
+      href={link}
+      target="_blank"
       onMouseEnter={(e) => setHover(true)}
       onMouseLeave={(e) => setHover(false)}
     >
