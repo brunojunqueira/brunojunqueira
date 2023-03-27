@@ -1,11 +1,37 @@
 import { useBreakpointValue } from "@chakra-ui/react";
 
 export default function useBreakpoint() {
-  const isMobile = useBreakpointValue({ base: true, lg: false });
-  const fontSize = useBreakpointValue({ base: 14, lg: 16 });
-  const titleSize = useBreakpointValue({ base: 55, md: 100, lg: 160 });
-  const titleSpace = useBreakpointValue({ base: 2, md: 4, lg: 6 });
-  const padding = useBreakpointValue({ base: 4, md: 10, lg: 30 });
+  const sizes = useBreakpointValue({
+    base: {
+      isMobile: true,
+      fontSize: 14,
+      titleSize: 55,
+      titleSpace: 2,
+      padding: 4,
+    },
+    md: {
+      isMobile: true,
+      fontSize: 14,
+      titleSize: 100,
+      titleSpace: 4,
+      padding: 10,
+    },
+    lg: {
+      isMobile: false,
+      fontSize: 16,
+      titleSize: 160,
+      titleSpace: 6,
+      padding: 30,
+    },
+  });
 
-  return { isMobile, titleSize, titleSpace, fontSize, padding };
+  return (
+    sizes ?? {
+      isMobile: false,
+      fontSize: 14,
+      titleSize: 100,
+      titleSpace: 4,
+      padding: 10,
+    }
+  );
 }
