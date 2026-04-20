@@ -42,11 +42,3 @@ Ferramentas  →  Git · Docker · VS Code · Linux
 - Explorando automação e lógica de sistemas
 
 ---
-
-<div align="center">
-  
-```
-"Qualquer tecnologia suficientemente avançada é indistinguível de magia." — Arthur C. Clarke
-```
-
-</div>
